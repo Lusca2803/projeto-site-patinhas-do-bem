@@ -92,7 +92,7 @@ body {
     margin-left: 250px;
     padding: 30px;
     flex: 1;
-    max-width: 1000px;
+    /* sem max-width: o conteúdo (e os cards) usa toda a largura disponível */
 }
 
 h2 {
@@ -121,18 +121,59 @@ img {
 /* ===== Cards (Projetos) - Flexbox ===== */
 .cards-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   /* permite quebrar linha: evita rolagem horizontal */
     gap: 20px;
     margin-top: 20px;
 }
 
 .card {
-    flex: 1 1 260px;
+    flex: 1 1 280px;   /* largura base flexível: cresce e encolhe conforme a tela */
     background-color: var(--bg-card);
     padding: 20px;
     border: 1px solid var(--borda-cor);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Imagens dos cards com a mesma altura */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Textos e formulário limitados a 900px para manter a leitura confortável
+   em telas grandes (cards e "Nosso impacto" continuam usando toda a largura) */
+.conteudo-principal > section:not(.cards-container):not(.numeros) {
+    max-width: 900px;
+}
+
+/* Bloco "Nosso impacto" e "Como ajudar" (página Projetos) */
+.numeros,
+.como-ajudar {
+    margin-top: 40px;
+}
+
+.numeros-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.numero-item {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--borda-cor);
+    border-radius: 8px;
+}
+
+.numero-item strong {
+    font-size: 2.5rem;
+    color: var(--destaque-azul);
 }
 
 /* ===== Formulário ===== */

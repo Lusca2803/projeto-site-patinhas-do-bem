@@ -12,6 +12,7 @@
 | Leonardo Alves Tavares Calixta | 47323485 |
 | Lucas Henrique Roque Cruz | 47178922 |
 | Matheus Montagner | 47209470 |
+| Renan Correia Ferreira de Sousa | 47022744 |
 | Renan Silva dos Santos | 47203099 |
 | Vinicius Marques de Melo | 47213426 |
 | Vinicius Scherer Di Giorno | 47028238 |
@@ -38,11 +39,12 @@ integrando HTML5 semântico, CSS3 e JavaScript básico, sem frameworks e sem bac
 
 ## Estrutura de arquivos
 ```
-ONG_PatinhasDoBem/
+projeto-site-patinhas-do-bem/
 ├── index.html · sobre.html · projetos.html · contato.html
 ├── css/estilos.css
 ├── js/script.js
 ├── img/  (logo, hero, sobre, projeto1–3)
+├── LICENSE
 └── README.md
 ```
 
@@ -52,11 +54,11 @@ Não há instalação. Extraia o ZIP e abra o arquivo `index.html` em qualquer n
 
 ## Fontes e créditos
 - Textos: elaborados pela equipe (ONG fictícia).
-- Imagens (`img/`):
-- herói.jpg-  gerado com Gemini - Prompts usados: Crie uma imagem de um cão e um gato em um centro de resgate animal.
-- logo.jpg-  gerado com Gemini - Prompts usados: Crie uma logo para uma ong de resgate de animais, pode ser um escudo com uma pata no centro, a borda e o meio do escudo devem ser de cor diferentes.
-- projeto1.jpg-  gerado com Gemini - Prompts usados: Crie uma imagem de um  Resgate e Pronto Socorro Animal, da ong Patinhas do Bem.
-- projeto2.jpg-  gerado com Gemini - Prompts usados: Crie uma imagem de um  Mutirão de Castração Solidária, da ong Patinhas do Bem.
-- projeto3.jpg-  gerado com Gemini - Prompts usados: Crie uma imagem de uma  Feira de Adoção e Conscientização, da ong Patinhas do Bem.
-- sobre.jpg-  gerado com Gemini - Prompts usados: Crie uma imagem de um cachorro que acabou de ser resgatado, e esta sendo cuidado por uma Veterinária.
+- Imagens (`img/`), todas geradas com o Gemini:
+  - `hero.jpg`: gerada com Gemini. Prompt: "Crie uma imagem de um cão e um gato em um centro de resgate animal."
+  - `logo.jpg`: gerada com Gemini. Prompt: "Crie uma logo para uma ong de resgate de animais, pode ser um escudo com uma pata no centro, a borda e o meio do escudo devem ser de cor diferentes."
+  - `projeto1.jpg`: gerada com Gemini. Prompt: "Crie uma imagem de um Resgate e Pronto Socorro Animal, da ong Patinhas do Bem."
+  - `projeto2.jpg`: gerada com Gemini. Prompt: "Crie uma imagem de um Mutirão de Castração Solidária, da ong Patinhas do Bem."
+  - `projeto3.jpg`: gerada com Gemini. Prompt: "Crie uma imagem de uma Feira de Adoção e Conscientização, da ong Patinhas do Bem."
+  - `sobre.jpg`: gerada com Gemini. Prompt: "Crie uma imagem de um cachorro que acabou de ser resgatado, e esta sendo cuidado por uma Veterinária."
 - Nenhum framework ou biblioteca externa foi utilizado.
