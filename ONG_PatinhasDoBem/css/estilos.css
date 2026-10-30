@@ -1,0 +1,281 @@
+/* ===== Reset e variáveis ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-principal: #f0f8ff;
+    --bg-card: #ffffff;
+    --bg-menu: #023e8a;      /* branco sobre esta cor: contraste ~10:1 */
+    --texto-cor: #1d3557;
+    --texto-menu: #ffffff;
+    --destaque-azul: #0077b6; /* branco sobre esta cor: contraste ~4,9:1 */
+    --btn-hover: #023e8a;
+    --borda-cor: #bcdff0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-principal);
+    color: var(--texto-cor);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ===== Cabeçalho / menu lateral (desktop) ===== */
+.menu-lateral {
+    width: 250px;
+    background-color: var(--bg-menu);
+    color: var(--texto-menu);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo-img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    margin: 0 auto 12px;
+}
+
+.menu-lateral h1 {
+    font-size: 1.2rem;
+}
+
+.menu-lateral nav {
+    width: 100%;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu-lateral a {
+    color: var(--texto-menu);
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.menu-lateral a:hover,
+.menu-lateral a.ativo {
+    background-color: var(--destaque-azul);
+}
+
+/* ===== Conteúdo ===== */
+.conteudo-principal {
+    margin-left: 250px;
+    padding: 30px;
+    flex: 1;
+    max-width: 1000px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 14px;
+}
+
+ul.lista {
+    margin: 0 0 14px 22px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+/* ===== Cards (Projetos) - Flexbox ===== */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    flex: 1 1 260px;
+    background-color: var(--bg-card);
+    padding: 20px;
+    border: 1px solid var(--borda-cor);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Formulário ===== */
+.grupo-campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #7aa7c0;
+    border-radius: 6px;
+    background-color: var(--bg-card);
+    color: var(--texto-cor);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.btn,
+button {
+    display: inline-block;
+    background-color: var(--destaque-azul);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.btn:hover,
+button:hover {
+    background-color: var(--btn-hover);
+}
+
+/* Foco visível para navegação por teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #ffb703;
+    outline-offset: 2px;
+}
+
+.painel-faq {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: var(--bg-card);
+    border-left: 4px solid var(--destaque-azul);
+    border-radius: 4px;
+}
+
+.feedback {
+    display: block;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.feedback:empty {
+    display: none;
+}
+
+.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+footer {
+    margin-left: 250px;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--bg-menu);
+    color: var(--texto-menu);
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* ===== Responsividade (celular) ===== */
+@media (max-width: 768px) {
+    .menu-lateral {
+        width: 100%;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 16px;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 0;
+    }
+
+    .logo-img {
+        width: 56px;
+        height: 56px;
+        margin: 0;
+        border-width: 2px;
+    }
+
+    .menu-lateral nav {
+        width: 100%;
+    }
+
+    /* menu em linha, quebrando para a próxima se faltar espaço */
+    .menu-lateral ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .menu-lateral a {
+        padding: 8px 12px;
+    }
+
+    .conteudo-principal,
+    footer {
+        margin-left: 0;
+    }
+
+    .conteudo-principal {
+        padding: 20px 16px;
+    }
+}

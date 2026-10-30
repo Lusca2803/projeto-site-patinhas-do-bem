@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patinhas do Bem | Contato</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="menu-lateral">
+        <div class="logo-container">
+            <img src="img/logo.jpg" alt="Logo da Patinhas do Bem: escudo azul com uma pata de animal" class="logo-img">
+            <h1>Patinhas do Bem</h1>
+        </div>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html" class="ativo" aria-current="page">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+        <section>
+            <h2>Fale conosco e faça parte da nossa rede de voluntários</h2>
+            <p>Você pode ajudar de várias formas:</p>
+            <ul class="lista">
+                <li>Candidatar-se como voluntário nos mutirões e nas feiras de adoção;</li>
+                <li>Oferecer lar temporário para animais em recuperação;</li>
+                <li>Doar ração, medicamentos e insumos;</li>
+                <li>Tirar dúvidas sobre adoção responsável.</li>
+            </ul>
+            <p>Preencha o formulário abaixo para entrar em contato.</p>
+            <p><small><strong>Atenção:</strong> este é um projeto acadêmico. O envio é apenas simulado: nenhuma mensagem é enviada e nenhum dado é coletado ou armazenado.</small></p>
+
+            <form id="meu-formulario" novalidate>
+                <div class="grupo-campo">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" id="nome" name="nome" required minlength="3" autocomplete="name">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="email">E-mail de contato:</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="assunto">Assunto da mensagem:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="mensagem">Sua mensagem / proposta:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required minlength="10"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Enviar mensagem</button>
+            </form>
+
+            <output id="mensagem-feedback" class="feedback" role="status"></output>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Patinhas do Bem &ndash; Projeto acadêmico (ONG fictícia), sem fins comerciais.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
