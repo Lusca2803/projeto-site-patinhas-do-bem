@@ -52,5 +52,11 @@ Não há instalação. Extraia o ZIP e abra o arquivo `index.html` em qualquer n
 
 ## Fontes e créditos
 - Textos: elaborados pela equipe (ONG fictícia).
-- Imagens (`img/`): **[PREENCHER: informe a origem de cada imagem – ex.: gerada com a ferramenta X / banco de imagens Y, com link e licença]**.
+- Imagens (`img/`):
+- herói.jpg-  gerado com Gemini - Prompts usados: Crie uma imagem de um cão e um gato em um centro de resgate animal.
+- logo.jpg-  gerado com Gemini - Prompts usados: Crie uma logo para uma ong de resgate de animais, pode ser um escudo com uma pata no centro, a borda e o meio do escudo devem ser de cor diferentes.
+- projeto1.jpg-  gerado com Gemini - Prompts usados: Crie uma imagem de um  Resgate e Pronto Socorro Animal, da ong Patinhas do Bem.
+- projeto2.jpg-  gerado com Gemini - Prompts usados: Crie uma imagem de um  Mutirão de Castração Solidária, da ong Patinhas do Bem.
+- projeto3.jpg-  gerado com Gemini - Prompts usados: Crie uma imagem de uma  Feira de Adoção e Conscientização, da ong Patinhas do Bem.
+- sobre.jpg-  gerado com Gemini - Prompts usados: Crie uma imagem de um cachorro que acabou de ser resgatado, e esta sendo cuidado por uma Veterinária.
 - Nenhum framework ou biblioteca externa foi utilizado.
